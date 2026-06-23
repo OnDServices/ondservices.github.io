@@ -1,0 +1,279 @@
+/* ==========================================================================
+   ONDServices — Custom Styles
+   Tailwind utilities are loaded via CDN in index.html.
+   This file handles effects, components, and polish Tailwind doesn't cover.
+   ========================================================================== */
+
+/* --- Base --- */
+
+::selection {
+  background-color: rgb(16 185 129 / 0.35);
+  color: #fff;
+}
+
+/* --- Hero ambient glow --- */
+
+.hero-glow {
+  background:
+    radial-gradient(ellipse 60% 50% at 50% -10%, rgb(16 185 129 / 0.12), transparent),
+    radial-gradient(ellipse 40% 30% at 80% 20%, rgb(34 211 238 / 0.08), transparent);
+}
+
+.accent-gradient {
+  background: linear-gradient(135deg, #10b981 0%, #22d3ee 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* --- Navigation --- */
+
+.nav-link {
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #fff;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #10b981;
+  transition: width 0.25s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.mobile-nav-link {
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.mobile-nav-link:hover {
+  background-color: rgb(30 41 59);
+  color: #fff;
+}
+
+/* --- Badge pulse --- */
+
+.badge {
+  animation: badge-fade-in 0.6s ease both;
+}
+
+@keyframes badge-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* --- Buttons --- */
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  background-color: #10b981;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #0f172a;
+  transition: background-color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #34d399;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 20px rgb(16 185 129 / 0.3);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  border: 1px solid rgb(51 65 85);
+  background-color: transparent;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #e2e8f0;
+  transition: border-color 0.2s ease, color 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-secondary:hover {
+  border-color: #10b981;
+  color: #10b981;
+  background-color: rgb(16 185 129 / 0.05);
+}
+
+/* --- Stat cards --- */
+
+.stat-card {
+  border-radius: 0.75rem;
+  border: 1px solid rgb(30 41 59);
+  background-color: rgb(15 23 42 / 0.6);
+  padding: 1.25rem 1.5rem;
+  transition: border-color 0.25s ease;
+}
+
+.stat-card:hover {
+  border-color: rgb(16 185 129 / 0.3);
+}
+
+/* --- Tech stack cards --- */
+
+.stack-card {
+  border-radius: 0.75rem;
+  border: 1px solid rgb(30 41 59);
+  background-color: rgb(15 23 42 / 0.5);
+  padding: 1.75rem;
+  transition: border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.stack-card:hover {
+  border-color: rgb(16 185 129 / 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgb(0 0 0 / 0.25);
+}
+
+.stack-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.stack-icon-emerald {
+  background-color: rgb(16 185 129 / 0.1);
+  color: #10b981;
+}
+
+.stack-icon-cyan {
+  background-color: rgb(34 211 238 / 0.1);
+  color: #22d3ee;
+}
+
+/* --- Case study cards --- */
+
+.case-card {
+  border-radius: 0.75rem;
+  border: 1px solid rgb(30 41 59);
+  background-color: rgb(15 23 42 / 0.7);
+  padding: 2rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.case-card:hover {
+  border-color: rgb(16 185 129 / 0.35);
+  box-shadow: 0 12px 40px rgb(0 0 0 / 0.3);
+}
+
+.case-number {
+  letter-spacing: 0.1em;
+}
+
+.case-bullet {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.625rem;
+}
+
+.case-bullet::before {
+  content: '';
+  flex-shrink: 0;
+  width: 6px;
+  height: 6px;
+  margin-top: 0.45rem;
+  border-radius: 50%;
+  background-color: #10b981;
+}
+
+.tech-tag {
+  display: inline-block;
+  border-radius: 9999px;
+  border: 1px solid rgb(51 65 85);
+  background-color: rgb(30 41 59 / 0.6);
+  padding: 0.25rem 0.75rem;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.75rem;
+  color: #94a3b8;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.case-card:hover .tech-tag {
+  border-color: rgb(16 185 129 / 0.25);
+}
+
+/* --- Footer links --- */
+
+.footer-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgb(51 65 85);
+  background-color: rgb(15 23 42);
+  padding: 0.75rem 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #e2e8f0;
+  transition: border-color 0.2s ease, color 0.2s ease, background-color 0.2s ease, transform 0.15s ease;
+}
+
+.footer-link:hover {
+  border-color: #10b981;
+  color: #10b981;
+  background-color: rgb(16 185 129 / 0.05);
+  transform: translateY(-1px);
+}
+
+/* --- Scrollbar (WebKit) --- */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+/* --- Reduced motion --- */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

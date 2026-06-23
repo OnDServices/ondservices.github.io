@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ONDServices — On-demand financial infrastructure and AI-augmented accounting workflows for enterprise operations. A wholly-owned subsidiary of Atwell Consulting, LLC." />
+  <title>ONDServices | OnDemand Services</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+            mono: ['JetBrains Mono', 'ui-monospace', 'monospace'],
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg-slate-900 text-white antialiased">
+
+  <header class="fixed top-0 inset-x-0 z-50 border-b border-slate-800/80 bg-slate-900/80 backdrop-blur-md">
+    <nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4" aria-label="Main navigation">
+      <a href="#top" class="group flex flex-col leading-none transition-colors">
+        <span class="text-lg font-bold tracking-tight text-white group-hover:text-emerald-400">ONDServices</span>
+        <span class="mt-0.5 text-[10px] font-medium uppercase tracking-[0.2em] text-cyan-400/80">OnDemand Services</span>
+      </a>
+      <ul class="hidden items-center gap-8 text-sm font-medium text-slate-300 sm:flex">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#capabilities" class="nav-link">Capabilities</a></li>
+        <li><a href="#assets" class="nav-link">Proprietary Assets</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button
+        id="mobile-menu-btn"
+        type="button"
+        class="inline-flex items-center justify-center rounded-md p-2 text-slate-300 transition-colors hover:bg-slate-800 hover:text-white sm:hidden"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        aria-label="Toggle navigation menu"
+      >
+        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+          <path id="menu-icon-open" stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          <path id="menu-icon-close" class="hidden" stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </nav>
+    <div id="mobile-menu" class="hidden border-t border-slate-800 bg-slate-900 sm:hidden">
+      <ul class="flex flex-col gap-1 px-6 py-4 text-sm font-medium text-slate-300">
+        <li><a href="#about" class="mobile-nav-link block rounded-md px-3 py-2">About</a></li>
+        <li><a href="#capabilities" class="mobile-nav-link block rounded-md px-3 py-2">Capabilities</a></li>
+        <li><a href="#assets" class="mobile-nav-link block rounded-md px-3 py-2">Proprietary Assets</a></li>
+        <li><a href="#contact" class="mobile-nav-link block rounded-md px-3 py-2">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <section id="about" class="relative overflow-hidden pt-32 pb-24 sm:pt-40 sm:pb-32">
+      <div class="hero-glow pointer-events-none absolute inset-0" aria-hidden="true"></div>
+      <div class="relative mx-auto max-w-6xl px-6">
+        <div class="max-w-3xl">
+          <p class="text-sm font-semibold uppercase tracking-widest text-cyan-400">
+            Atwell Consulting Group &middot; Operating Subsidiary
+          </p>
+          <span class="badge mt-6 inline-flex items-center gap-2 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-4 py-1.5 text-sm font-medium text-emerald-400">
+            <span aria-hidden="true">🤖</span>
+            Built 100% in Cursor using AI Pair-Programming
+          </span>
+          <h1 class="mt-8 text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl">
+            On-demand financial infrastructure for
+            <span class="accent-gradient"> enterprise operations</span>
+          </h1>
+          <p class="mt-6 text-lg leading-relaxed text-slate-300 sm:text-xl">
+            <strong class="font-semibold text-white">Bryan Bildner</strong>, Principal Automation Architect &amp; Managing Consultant at ONDServices, deploys high-efficiency financial infrastructure and AI-augmented accounting workflows for organizations that require precision, speed, and audit-ready automation — without the overhead of a full-time internal data engineering team.
+          </p>
+          <p class="mt-4 text-base leading-relaxed text-slate-400">
+            From predictive forecasting engines to automated ledger reconciliation pipelines, ONDServices delivers production-grade Python systems that transform volatile operational data into actionable intelligence and eliminate manual close-cycle labor.
+          </p>
+          <div class="mt-10 flex flex-wrap gap-4">
+            <a href="#assets" class="btn-primary">Explore Proprietary Assets</a>
+            <a href="#contact" class="btn-secondary">Schedule an Operational Audit</a>
+          </div>
+        </div>
+        <dl class="mt-16 grid grid-cols-2 gap-6 sm:grid-cols-4">
+          <div class="stat-card">
+            <dt class="text-sm text-slate-400">Leadership</dt>
+            <dd class="mt-1 font-semibold text-white">Bryan Bildner</dd>
+          </div>
+          <div class="stat-card">
+            <dt class="text-sm text-slate-400">Entity</dt>
+            <dd class="mt-1 font-semibold text-white">ONDServices, LLC</dd>
+          </div>
+          <div class="stat-card">
+            <dt class="text-sm text-slate-400">Delivery Model</dt>
+            <dd class="mt-1 font-semibold text-white">On-Demand</dd>
+          </div>
+          <div class="stat-card">
+            <dt class="text-sm text-slate-400">Core Stack</dt>
+            <dd class="mt-1 font-semibold text-white">Python + AI</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section id="capabilities" class="border-t border-slate-800 py-24">
+      <div class="mx-auto max-w-6xl px-6">
+        <div class="max-w-2xl">
+          <p class="text-sm font-semibold uppercase tracking-widest text-emerald-500">Enterprise Capabilities</p>
+          <h2 class="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl">Our core technical stack</h2>
+          <p class="mt-4 text-slate-400">
+            ONDServices engineers bespoke financial automation systems using a disciplined, production-first technology stack — purpose-built for enterprise accounting operations, regulatory controls, and high-velocity deployment cycles.
+          </p>
+        </div>
+        <ul class="mt-12 grid gap-4 sm:grid-cols-2">
+          <li class="stack-card">
+            <div class="stack-icon stack-icon-emerald" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" class="h-6 w-6" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-semibold text-white">Python Data Engineering</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-400">
+              End-to-end data architecture using pandas, NumPy, and scikit-learn — from ingestion and validation through transformation, modeling, and auditable report generation for finance and operations leadership.
+            </p>
+          </li>
+          <li class="stack-card">
+            <div class="stack-icon stack-icon-cyan" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" class="h-6 w-6" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-semibold text-white">Automated ETL Pipelines</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-400">
+              Scheduled ingestion, schema normalization, and exception handling across heterogeneous CSV exports, banking feeds, and ERP extracts — delivering analysis-ready datasets without manual spreadsheet intervention.
+            </p>
+          </li>
+          <li class="stack-card">
+            <div class="stack-icon stack-icon-emerald" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" class="h-6 w-6" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-semibold text-white">Predictive Data Modeling</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-400">
+              Multi-variable linear regression, variance decomposition, and Kelly Criterion resource allocation — translating operational metrics into forward-looking forecasts with quantified confidence intervals and risk-adjusted capital deployment recommendations.
+            </p>
+          </li>
+          <li class="stack-card">
+            <div class="stack-icon stack-icon-cyan" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" class="h-6 w-6" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-semibold text-white">Rapid AI Development Cycles</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-400">
+              Cursor-powered AI pair-programming accelerates prototyping, pipeline refactoring, and production deployment — compressing enterprise software delivery timelines while maintaining audit-grade code quality and documentation standards.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="assets" class="border-t border-slate-800 bg-slate-900/50 py-24">
+      <div class="mx-auto max-w-6xl px-6">
+        <div class="max-w-2xl">
+          <p class="text-sm font-semibold uppercase tracking-widest text-cyan-400">Proprietary Assets</p>
+          <h2 class="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl">Firm-developed software tools</h2>
+          <p class="mt-4 text-slate-400">
+            Production-grade systems engineered in-house by ONDServices to solve recurring enterprise challenges in financial forecasting, variance analysis, and transaction reconciliation.
+          </p>
+        </div>
+        <div class="mt-12 grid gap-8 lg:grid-cols-2">
+
+          <article class="case-card">
+            <div class="flex items-start justify-between gap-4">
+              <span class="case-number font-mono text-sm text-emerald-500">01</span>
+              <span class="rounded-full border border-slate-700 bg-slate-800 px-3 py-1 text-xs font-medium text-slate-300">Forecasting Engine</span>
+            </div>
+            <h3 class="mt-6 text-xl font-bold text-white sm:text-2xl">
+              Multi-Variable Predictive Forecasting &amp; Risk Engine
+            </h3>
+            <p class="mt-4 leading-relaxed text-slate-400">
+              Developed to ingest volatile operational metrics — including <code class="font-mono text-sm text-emerald-400">production_efficiency</code>, <code class="font-mono text-sm text-emerald-400">resource_utilization</code>, and <code class="font-mono text-sm text-emerald-400">throughput_velocity</code> — from <code class="font-mono text-sm text-cyan-400">historical_performance_data.csv</code>, analyze system variance (R² = 0.60), and output optimized capital allocation percentages using automated statistical regression modeling and Kelly Criterion risk management.
+            </p>
+            <ul class="mt-6 space-y-2 text-sm text-slate-300">
+              <li class="case-bullet">Multi-variable linear regression with StandardScaler feature normalization</li>
+              <li class="case-bullet">Hold-out evaluation reporting MSE, RMSE, and R² on the test partition</li>
+              <li class="case-bullet">Forward predictions with 95% confidence intervals and residual variance (σ²)</li>
+              <li class="case-bullet">Fractional Kelly allocation capped at 25% for enterprise risk governance</li>
+            </ul>
+            <div class="mt-8 flex flex-wrap gap-2">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">scikit-learn</span>
+              <span class="tech-tag">pandas</span>
+              <span class="tech-tag">Kelly Criterion</span>
+            </div>
+            <a href="https://github.com/OnDServices/OnDServices-infrastructure/blob/main/predictive_forecasting_engine.py" target="_blank" rel="noopener noreferrer" class="btn-secondary mt-6 inline-flex">View Source Code</a>
+          </article>
+
+          <article class="case-card">
+            <div class="flex items-start justify-between gap-4">
+              <span class="case-number font-mono text-sm text-cyan-400">02</span>
+              <span class="rounded-full border border-slate-700 bg-slate-800 px-3 py-1 text-xs font-medium text-slate-300">Reconciliation Pipeline</span>
+            </div>
+            <h3 class="mt-6 text-xl font-bold text-white sm:text-2xl">
+              Automated Ledger Reconciliation &amp; ETL Pipeline
+            </h3>
+            <p class="mt-4 leading-relaxed text-slate-400">
+              Designed to solve the administrative overhead of manual transaction matching by automatically ingesting, standardizing, and checking unaligned data streams — <code class="font-mono text-sm text-emerald-400">external_vendor_dump.csv</code> versus <code class="font-mono text-sm text-emerald-400">internal_general_ledger.csv</code> — for structural discrepancies. The pipeline performs outer-join reconciliation, flags <code class="font-mono text-sm text-slate-300">AMOUNT_MISMATCH</code> variances and <code class="font-mono text-sm text-slate-300">LEDGER_ONLY</code> / <code class="font-mono text-sm text-slate-300">VENDOR_ONLY</code> omissions, and exports all exceptions to <code class="font-mono text-sm text-cyan-400">recon_variance_report.csv</code>.
+            </p>
+            <ul class="mt-6 space-y-2 text-sm text-slate-300">
+              <li class="case-bullet">Automated currency parsing, date normalization, and whitespace cleaning</li>
+              <li class="case-bullet">Flexible column alias resolution across heterogeneous CSV schemas</li>
+              <li class="case-bullet">Outer-join matching on transaction ID with date + amount fallback keys</li>
+              <li class="case-bullet">Auditable exception report sorted by status for finance team review</li>
+            </ul>
+            <div class="mt-8 flex flex-wrap gap-2">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">pandas</span>
+              <span class="tech-tag">ETL</span>
+              <span class="tech-tag">Reconciliation</span>
+            </div>
+            <a href="https://github.com/OnDServices/OnDServices-infrastructure/blob/main/reconcile_ledger.py" target="_blank" rel="noopener noreferrer" class="btn-secondary mt-6 inline-flex">View Source Code</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="contact" class="border-t border-slate-800 py-16">
+    <div class="mx-auto max-w-6xl px-6">
+      <div class="max-w-2xl">
+        <p class="text-sm font-semibold uppercase tracking-widest text-emerald-500">Engage ONDServices</p>
+        <h2 class="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+          Schedule an on-demand operational audit
+        </h2>
+        <p class="mt-4 text-slate-400">
+          ONDServices partners with enterprise clients and strategic allies seeking bespoke financial automation pipelines — from predictive forecasting deployments to full-scale ledger reconciliation infrastructure. Connect with Bryan Bildner and the ONDServices team to assess your operational data landscape and define a targeted automation roadmap.
+        </p>
+      </div>
+      <div class="mt-10 flex flex-wrap gap-4">
+        <a href="mailto:contact@ondservices.com" class="btn-primary">Schedule an Operational Audit</a>
+        <a href="mailto:contact@ondservices.com" class="btn-secondary">Discuss a Custom Pipeline</a>
+      </div>
+      <ul class="mt-10 flex flex-wrap gap-4">
+        <li>
+          <a href="https://github.com/OnDServices/OnDServices-infrastructure" class="footer-link" download>
+            <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+            </svg>
+            Firm Brief
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/OnDServices/OnDServices-infrastructure" class="footer-link" target="_blank" rel="noopener noreferrer">
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
+            </svg>
+            GitHub
+          </a>
+        </li>
+        <li>
+          <a href="mailto:contact@ondservices.com" class="footer-link">
+            <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+            </svg>
+            Email
+          </a>
+        </li>
+      </ul>
+      <div class="legal-notice mt-16 border-t border-slate-800 pt-8">
+        <p class="text-center text-sm leading-relaxed text-slate-500">
+          ONDServices, LLC is a wholly-owned operating subsidiary of Atwell Consulting, LLC. All Rights Reserved &copy; 2026.
+        </p>
+        <p class="mt-3 text-center font-mono text-xs text-slate-600">
+          Engineered by Bryan Bildner &middot; Cursor AI Pair-Programming &middot; Tailwind CSS
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const iconOpen = document.getElementById('menu-icon-open');
+    const iconClose = document.getElementById('menu-icon-close');
+
+    menuBtn.addEventListener('click', () => {
+      const isOpen = !mobileMenu.classList.contains('hidden');
+      mobileMenu.classList.toggle('hidden');
+      iconOpen.classList.toggle('hidden', !isOpen);
+      iconClose.classList.toggle('hidden', isOpen);
+      menuBtn.setAttribute('aria-expanded', String(!isOpen));
+    });
+
+    document.querySelectorAll('.mobile-nav-link').forEach((link) => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        iconOpen.classList.remove('hidden');
+        iconClose.classList.add('hidden');
+        menuBtn.setAttribute('aria-expanded', 'false');
+      });
+    });
+  </script>
+</body>
+</html>
